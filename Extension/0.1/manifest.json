@@ -1,0 +1,13 @@
+{
+  "name": "NTNU Startsiden",
+  "description": "Enkel tilgang til alle NTNU-tjenester.",
+  "version": "0.1", 
+  "manifest_version": 2,
+  "browser_action": {
+	   "default_popup": "popup.html"
+   },  
+   "permissions": [
+	  "tabs"
+   ],
+   "icons": { "16": "images/icon16.png", "128": "images/icon128.png" } 
+} 

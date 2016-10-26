@@ -1,0 +1,43 @@
+/*
+	Settings
+*/ 
+body, html{ 
+   min-width:780px;
+   min-height:499px;
+   padding:0px;
+}
+.container-fluid{
+	padding-left:25px;  
+	padding-top:15px;  
+}
+.link{
+	background:#f5f5f5;
+	color:#4c4c4c;
+	padding:15px;
+ 	box-shadow: 0 1px 4px rgba(0,0,0,.4);
+    transition: box-shadow 0.3s;
+	font-size:25px;
+	font-weight: bold;
+    border-radius: 5px;
+	height:175px; 
+	width:180px; 
+	margin:5px; 
+}  
+.link:hover { 
+ 	box-shadow: 0 1px 6px rgba(100,140,212,1);
+} 
+.icon{
+	width:100px;
+	height:100px;
+}
+
+#settings{ 	
+	-webkit-filter: drop-shadow(0 1px 1px rgba(0,0,0,.4));
+	filter: drop-shadow(0 1px 1px rgba(0,0,0,.4));
+    transition: box-shadow 0.3s;
+} 
+#settings:hover {  
+	-webkit-filter: drop-shadow(0 1px 1px rgba(100,140,212,1));
+	filter: drop-shadow(0 1px 1px rgba(100,140,212,1));
+ 	box-shadow:;
+} 

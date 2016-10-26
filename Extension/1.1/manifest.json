@@ -1,0 +1,28 @@
+{
+	"name": "Klikk",
+	"description": "Enkel tilgang til NTNU sine tjenester.",
+	"version": "1.1",  
+	"manifest_version": 2, 
+	"browser_action": {
+	   "default_popup": "popup.html"
+	},  
+	"commands": {
+	  "_execute_browser_action": {
+		"suggested_key": {
+		  "windows": "Alt+K",
+		  "mac": "Alt+K", 
+		  "chromeos": "Alt+K",
+		  "linux": "Alt+K"
+		}
+	  }
+	},
+	"background": {
+		"scripts": ["analytics.js"]
+	},
+	"permissions": [
+	  "tabs", 
+	  "storage" 
+	], 
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+	"icons": { "16": "images/icon16.png", "128": "images/icon128.png" } 
+}  

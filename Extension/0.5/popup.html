@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="frameworks/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="frameworks/bootstrap/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="frameworks/jquery.js"></script>
+		<script src="frameworks/bootstrap/bootstrap.js"></script>
+		<script src="script.js"></script>
+	</head> 
+	<body>
+		<div class="container-fluid"> 
+			<div class="row">
+				<a href="https://sats.itea.ntnu.no/sso-wrapper/web/wrapper?target=itslearning"><div class="col-sm-3 link" align="center">Itslearning</br><img class="icon" src="images/its.png"></div></a>
+				<a href="https://outlook.office365.com/owa/?realm=ntnu.no#path=/mail"><div class="col-sm-3 link" align="center">Epost</br><img class="icon" src="images/email.png"></div></a> 
+				<a href="http://ntnu.1024.no/" id="schedule"><div class="col-sm-3 link" align="center">Timeplan <img id="settings" style="width:22px;height:22px;" class="icon" src="images/settings.png"></br><img class="icon" src="images/time.png"></div></a>
+				<a href="http://innsida.ntnu.no/o365"><div class="col-sm-3 link" align="center">Office 365</br><img class="icon" src="images/365.png"></div></a> 
+			</div> 		
+			<div class="row">
+				<a href="https://fsweb.no/studentweb/index.jsf?inst=FSNTNU"><div class="col-sm-3 link" align="center">Studentweb</br><img class="icon" src="images/studentweb.png"></div></a>
+				<a href="https://www.sit.no/middag"><div class="col-sm-3 link" align="center">Middag</br><img class="icon" src="images/dinner.png"></div></a> 
+				<a href="http://use.mazemap.com/?campuses=ntnu"><div class="col-sm-3 link" align="center">Campuscart</br><img class="icon" src="images/map.png"></div></a>
+				<a href="https://www.sit.no/trening/gruppe"><div class="col-sm-3 link" align="center">Trening</br><img class="icon" src="images/workout.png"></div></a>
+			</div> 						
+			<div class="row">
+				<a href="https://romres.ntnu.no/"><div class="col-sm-3 link" align="center">Romres</br><img class="icon" src="images/watch.png"></div></a>
+				<a href="https://software.ntnu.no/"><div class="col-sm-3 link" align="center">Programvare</br><img class="icon" src="images/download.png"></div></a>
+				<a href="https://farm.ntnu.no/"><div class="col-sm-3 link" align="center">Farm</br><img class="icon" src="images/farm.png"></div></a>
+				<a href="https://video.adm.ntnu.no/"><div class="col-sm-3 link" align="center">Forelesninger</br><img class="icon" src="images/video.png"></div></a>
+			</div> 		
+			<div class="row">
+				<div class="col-sm-6" align="left">
+				</div> 
+				<div class="col-sm-6" align="right">
+					Kokt av <a href="mailto:morten@founder.no">Morten Jansrud</a> med <a href="http://instabart.no">Instabart</a> som LF 
+				</div> 						
+			</div> 						
+		</div>  
+		<!-- Modal -->
+		<div id="schedule-modal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Husk kalendernavn</h4>   
+			  </div>
+			  <div class="modal-body">
+			  <div class="form-group">
+					<p>
+					La oss huske kalendernavnet ditt slik at du slipper å skrive det inn manuelt hver gang. Funksjonen synkroniserer mellom alle enhetene dine. Woho! 
+					</p>
+					<p>
+					<label for="usr">Kalendernavn:</label>
+					<input id="calendar" type="text" class="form-control" >
+					</p>
+				</div>
+			  </div>
+			  <div class="modal-footer">
+				<button id="schedule-save" type="button" class="btn btn-primary" data-dismiss="modal">Kjøøøøør!</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</body> 
+ </html> 

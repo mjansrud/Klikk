@@ -1,0 +1,18 @@
+{
+  "name": "Klikk",
+  "description": "Enkel tilgang til NTNU sine tjenester.",
+  "version": "0.6", 
+  "manifest_version": 2, 
+  "browser_action": {
+	   "default_popup": "popup.html"
+   },  
+   "background": {
+		"scripts": ["analytics.js"]
+   },
+   "permissions": [
+	  "tabs", 
+	  "storage" 
+   ], 
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "icons": { "16": "images/icon16.png", "128": "images/icon128.png" } 
+}  
