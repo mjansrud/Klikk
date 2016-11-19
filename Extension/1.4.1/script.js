@@ -7,13 +7,13 @@ $(function() {
 	var swiching_key = false;
 	var swiching_mouse = false;
 	var min = 1;
-	var max = 3;
+	var max = 4;
 	var random = Math.floor(Math.random() * (max - min + 1)) + min;
 	var message;
 	
 	switch (random){  
 		case 1:
-			message = 'Kokt av <a class="pointer" id="name">Morten Jansrud</a> med <a href="http://instabart.no" class="link">Instabart</a> som LF.';
+			message = 'Kokt av <a href="mailto:morten@founder.no" class="link">Morten Jansrud</a> med <a href="http://instabart.no" class="link">Instabart</a> som LF.';
 		break;
 		case 1:
 			message = 'Tips: "Alt+K" åpner vinduet -> Piltastene -> Enter.';
@@ -23,6 +23,9 @@ $(function() {
 		break;
 		case 3:
 			message = 'Tips: Del applikasjonen med knappene til høyre.';
+		break;
+		case 4:
+			message = '1f u c4n r34d th1s u r34lly n33d t0 g37 <a class="pointer" id="name">l41d</div>';
 		break;
 		default:
 			message = 'Shiiiiiet, scriptet aner ikke hva det skal si.';
@@ -87,7 +90,7 @@ $(function() {
 		return false; 
 	});
 	
-	$('#name').click(function(){
+	$('*#name').click(function(){
 		_gaq.push(['_trackEvent', 'name', 'clicked']);
 		$(".front").hide("fast");
 		$(".back").show("fast");

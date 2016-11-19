@@ -1,7 +1,7 @@
 {
 	"name": "Klikk",
 	"description": "Enkel tilgang til NTNU sine tjenester.",
-	"version": "1.3.5",  
+	"version": "1.4.0",  
 	"manifest_version": 2, 
 	"browser_action": { 
 	   "default_popup": "popup.html"
@@ -16,13 +16,6 @@
 		}
 	  }
 	},
-	"manifest_version": 2,
-   		"content_scripts": [
-    	{
-      		"matches": ["<all_urls>"],
-      		"js": ["frameworks/jquery.js", "background.js"]
-    	}
-  	],
 	"permissions": [
 	  "tabs", 
 	  "storage" 
